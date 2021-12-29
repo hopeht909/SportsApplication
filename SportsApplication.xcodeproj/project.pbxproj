@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844B326B277C77810047BFEA /* SportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B326A277C77810047BFEA /* SportTableViewController.swift */; };
+		844B326D277C77C70047BFEA /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B326C277C77C70047BFEA /* PlayerTableViewController.swift */; };
+		844B326F277C77ED0047BFEA /* SportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B326E277C77ED0047BFEA /* SportCell.swift */; };
 		847CD1BB277B822D00278014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD1BA277B822D00278014 /* AppDelegate.swift */; };
 		847CD1BD277B822D00278014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD1BC277B822D00278014 /* SceneDelegate.swift */; };
-		847CD1BF277B822D00278014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847CD1BE277B822D00278014 /* ViewController.swift */; };
 		847CD1C2277B822D00278014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847CD1C0277B822D00278014 /* Main.storyboard */; };
 		847CD1C5277B822D00278014 /* SportsApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 847CD1C3277B822D00278014 /* SportsApplication.xcdatamodeld */; };
 		847CD1C7277B822E00278014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847CD1C6277B822E00278014 /* Assets.xcassets */; };
@@ -17,10 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		844B326A277C77810047BFEA /* SportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableViewController.swift; sourceTree = "<group>"; };
+		844B326C277C77C70047BFEA /* PlayerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
+		844B326E277C77ED0047BFEA /* SportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCell.swift; sourceTree = "<group>"; };
 		847CD1B7277B822D00278014 /* SportsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847CD1BA277B822D00278014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847CD1BC277B822D00278014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		847CD1BE277B822D00278014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		847CD1C1277B822D00278014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		847CD1C4277B822D00278014 /* SportsApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportsApplication.xcdatamodel; sourceTree = "<group>"; };
 		847CD1C6277B822E00278014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844B3269277C77500047BFEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				844B326A277C77810047BFEA /* SportTableViewController.swift */,
+				844B326C277C77C70047BFEA /* PlayerTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		844B3270277C77FF0047BFEA /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				844B326E277C77ED0047BFEA /* SportCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		847CD1AE277B822D00278014 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +81,8 @@
 			children = (
 				847CD1BA277B822D00278014 /* AppDelegate.swift */,
 				847CD1BC277B822D00278014 /* SceneDelegate.swift */,
-				847CD1BE277B822D00278014 /* ViewController.swift */,
+				844B3270277C77FF0047BFEA /* CustomCell */,
+				844B3269277C77500047BFEA /* Controllers */,
 				847CD1C0277B822D00278014 /* Main.storyboard */,
 				847CD1C6277B822E00278014 /* Assets.xcassets */,
 				847CD1C8277B822E00278014 /* LaunchScreen.storyboard */,
@@ -141,9 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847CD1BF277B822D00278014 /* ViewController.swift in Sources */,
+				844B326D277C77C70047BFEA /* PlayerTableViewController.swift in Sources */,
+				844B326B277C77810047BFEA /* SportTableViewController.swift in Sources */,
 				847CD1C5277B822D00278014 /* SportsApplication.xcdatamodeld in Sources */,
 				847CD1BB277B822D00278014 /* AppDelegate.swift in Sources */,
+				844B326F277C77ED0047BFEA /* SportCell.swift in Sources */,
 				847CD1BD277B822D00278014 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +322,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,6 +350,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
